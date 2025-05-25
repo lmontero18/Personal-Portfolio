@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Luis Montero Portfolio",
     images: [
       {
-        url: "https://personal-portfolio-seven-eta-60.vercel.app/og-image.jpg",
+        url: "https://personal-portfolio-seven-eta-60.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Luis Montero Portfolio Preview",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     description:
       "Discover the work and projects of Luis Montero, a web developer specialized in React and Next.js.",
     creator: "@yourhandle",
-    images: ["https:personal-portfolio-seven-eta-60.vercel.app/og-image.jpg"],
+    images: ["https:personal-portfolio-seven-eta-60.vercel.app/og-image.png"],
   },
 };
 
