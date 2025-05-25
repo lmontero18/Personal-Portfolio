@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "motion/react";
-
+import { InstagramIcon, LinkedInIcon, GithubIcon } from "@/components/icons";
 export default function Hero() {
   return (
     <section className="flex flex-col items-center justify-start px-6 py-16">
@@ -25,13 +25,52 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      <div className="max-w-xl px-4 md:px-0 flex flex-col items-center text-center gap-4 mt-6">
-        <h1 className="text-3xl md:text-4xl font-semibold text-neutral-100">
+      {/* Texto */}
+      <div className="flex flex-col items-center text-center gap-4 mt-6">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-3xl md:text-4xl font-semibold text-neutral-100"
+        >
           Hello! I’m Luis Montero.
-        </h1>
-        <p className="text-base text-neutral-500 font-medium">
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-base text-neutral-500 font-medium"
+        >
           Full Stack Developer based in Costa Rica.
-        </p>
+        </motion.p>
+      </div>
+
+      <div className="mt-8 flex flex-row items-center justify-center gap-x-4">
+        <a
+          href="https://www.instagram.com/l_monterom"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
+          <InstagramIcon />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/luis-montero"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
+          <LinkedInIcon />
+        </a>
+        <a
+          href="https://github.com/lmontero18"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
+          <GithubIcon />
+        </a>
       </div>
     </section>
   );
