@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Luis Montero | Full Stack Developer",
     description:
       "Discover the work and projects of Luis Montero, a web developer specialized in React and Next.js.",
-    creator: "@yourhandle",
+    creator: "@LuisMon28216655",
     images: ["https:personal-portfolio-seven-eta-60.vercel.app/og-image.png"],
   },
 };
