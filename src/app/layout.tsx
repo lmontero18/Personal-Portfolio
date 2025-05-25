@@ -11,12 +11,12 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Luis Montero | Full Stack Developer",
   description:
-    "Portfolio de Luis Montero, desarrollador Full Stack especializado en tecnologías modernas como Next.js, React y diseño web. Descubre mis proyectos, habilidades y cómo contactarme.",
+    "Luis Montero's portfolio – a Full Stack Developer specialized in modern technologies like Next.js, React, and responsive UI design. Explore my projects, skills, and how to get in touch.",
   keywords: [
     "Luis Montero",
     "Portfolio",
     "Full Stack Developer",
-    "Desarrollador Web",
+    "Web Developer",
     "Next.js",
     "React",
     "TailwindCSS",
@@ -24,20 +24,20 @@ export const metadata: Metadata = {
     "Frontend",
     "Backend",
   ],
-  authors: [{ name: "Luis Montero", url: "https://tusitio.com" }],
+  authors: [{ name: "Luis Montero", url: "https://yourdomain.com" }],
   creator: "Luis Montero",
   openGraph: {
     title: "Luis Montero | Full Stack Developer",
     description:
-      "Explora el portfolio profesional de Luis Montero. Proyectos modernos, experiencia sólida y enfoque creativo.",
-    url: "https://tusitio.com",
+      "Explore the professional portfolio of Luis Montero — modern projects, solid experience, and a creative mindset.",
+    url: "https://yourdomain.com",
     siteName: "Luis Montero Portfolio",
     images: [
       {
-        url: "https://tusitio.com/og-image.jpg", // reemplaza con tu imagen real
+        url: "https://yourdomain.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Preview del portfolio de Luis Montero",
+        alt: "Luis Montero Portfolio Preview",
       },
     ],
     type: "website",
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Luis Montero | Full Stack Developer",
     description:
-      "Conocé el trabajo y los proyectos de Luis Montero, desarrollador web especializado en React y Next.js.",
-    creator: "@tuusuario", // opcional
-    images: ["https://tusitio.com/og-image.jpg"],
+      "Discover the work and projects of Luis Montero, a web developer specialized in React and Next.js.",
+    creator: "@yourhandle",
+    images: ["https://yourdomain.com/og-image.jpg"],
   },
 };
 
