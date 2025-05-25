@@ -1,12 +1,35 @@
 "use client";
 import Image from "next/image";
 import { motion } from "motion/react";
-import { InstagramIcon, LinkedInIcon, GithubIcon } from "@/components/icons";
+import {
+  InstagramIcon,
+  LinkedInIcon,
+  GithubIcon,
+  ArrowDown,
+} from "@/components/icons";
+
+const iconContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.6,
+    },
+  },
+};
+
+const iconItem = {
+  hidden: { opacity: 0, y: 10 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
+};
+
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center justify-start px-6 py-16">
-      {/* Imagen flotante */}
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-start px-6 py-16">
+      {/* Avatar flotante alineado a la izquierda en mobile */}
       <motion.div
+        className="self-start md:self-center"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -25,8 +48,8 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      {/* Texto */}
-      <div className="flex flex-col items-center text-center gap-4 mt-6">
+      {/* Texto alineado a la izquierda en mobile */}
+      <div className="flex flex-col items-start md:items-center text-left md:text-center gap-4 mt-6 w-full">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -46,32 +69,51 @@ export default function Hero() {
         </motion.p>
       </div>
 
-      <div className="mt-8 flex flex-row items-center justify-center gap-x-4">
-        <a
+      {/* Íconos animados alineados a la izquierda en mobile */}
+      <motion.div
+        className="mt-8 flex flex-row items-start md:items-center justify-start md:justify-center gap-x-4 w-full"
+        variants={iconContainer}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.a
           href="https://www.instagram.com/l_monterom"
           target="_blank"
           rel="noopener noreferrer"
           className="group"
+          variants={iconItem}
         >
           <InstagramIcon />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/luis-montero"
+        </motion.a>
+        <motion.a
+          href="https://www.linkedin.com/in/luismontero18"
           target="_blank"
           rel="noopener noreferrer"
           className="group"
+          variants={iconItem}
         >
           <LinkedInIcon />
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href="https://github.com/lmontero18"
           target="_blank"
           rel="noopener noreferrer"
           className="group"
+          variants={iconItem}
         >
           <GithubIcon />
-        </a>
-      </div>
+        </motion.a>
+      </motion.div>
+
+      {/* Flecha animada centrada */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4, duration: 0.6, ease: "easeOut" }}
+        className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
+      >
+        <ArrowDown />
+      </motion.div>
     </section>
   );
 }
