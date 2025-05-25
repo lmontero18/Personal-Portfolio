@@ -24,17 +24,22 @@ export const metadata: Metadata = {
     "Frontend",
     "Backend",
   ],
-  authors: [{ name: "Luis Montero", url: "https://yourdomain.com" }],
+  authors: [
+    {
+      name: "Luis Montero",
+      url: "https:personal-portfolio-seven-eta-60.vercel.app",
+    },
+  ],
   creator: "Luis Montero",
   openGraph: {
     title: "Luis Montero | Full Stack Developer",
     description:
       "Explore the professional portfolio of Luis Montero — modern projects, solid experience, and a creative mindset.",
-    url: "https://yourdomain.com",
+    url: "https:personal-portfolio-seven-eta-60.vercel.app",
     siteName: "Luis Montero Portfolio",
     images: [
       {
-        url: "https://yourdomain.com/og-image.jpg",
+        url: "https://personal-portfolio-seven-eta-60.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Luis Montero Portfolio Preview",
@@ -48,7 +53,7 @@ export const metadata: Metadata = {
     description:
       "Discover the work and projects of Luis Montero, a web developer specialized in React and Next.js.",
     creator: "@yourhandle",
-    images: ["https://yourdomain.com/og-image.jpg"],
+    images: ["https:personal-portfolio-seven-eta-60.vercel.app/og-image.jpg"],
   },
 };
 
