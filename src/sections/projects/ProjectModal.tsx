@@ -21,8 +21,6 @@ export const ProjectModal = ({
   imgSrc,
   title,
   tech,
-  code,
-  projectLink,
 }: ModalProps) => {
   return (
     <AnimatePresence>

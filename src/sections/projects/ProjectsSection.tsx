@@ -43,9 +43,9 @@ const projects = [
         <p>
           Katalogue is a platform I co-founded to empower creators and
           entrepreneurs in Costa Rica and LATAM to build beautifully structured,
-          public-facing product collections. It's designed to be lightweight,
-          fast, and visually engaging—perfect for showcasing favorite tools,
-          curated items, or inspiration boards.
+          public-facing product collections. It&apos;s designed to be
+          lightweight, fast, and visually engaging—perfect for showcasing
+          favorite tools, curated items, or inspiration boards.
         </p>
         <p>
           I led the technical side: frontend architecture, backend API design,
@@ -54,8 +54,8 @@ const projects = [
           experience.
         </p>
         <p>
-          Katalogue is currently available in Spanish only, as we're focused on
-          supporting Spanish-speaking creators across Latin America.
+          Katalogue is currently available in Spanish only, as we&apos;re
+          focused on supporting Spanish-speaking creators across Latin America.
         </p>
       </>
     ),
