@@ -1,6 +1,7 @@
 import AboutSection from "@/sections/about/About";
 import { HeaderWrapper } from "@/sections/header/HeaderWrapper";
 import Hero from "@/sections/hero/Hero";
+import { ProjectsSection } from "@/sections/projects/ProjectsSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeaderWrapper />
       <Hero />
       <AboutSection />
+      <ProjectsSection />
     </main>
   );
 }
