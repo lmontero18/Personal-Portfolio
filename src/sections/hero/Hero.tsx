@@ -106,9 +106,9 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.4, duration: 0.6, ease: "easeOut" }}
-        className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-32 md:bottom-12 left-1/2 transform -translate-x-1/2"
       >
-        <a href="#about">
+        <a href="#about" aria-label="Scroll to About">
           <ArrowDown />
         </a>
       </motion.div>
