@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
+  { label: "Home", href: "#" },
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
 ];
