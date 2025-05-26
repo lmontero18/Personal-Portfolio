@@ -8,18 +8,18 @@ export const HeaderDesktop = () => {
 
 const SimpleFloatingNav = () => {
   return (
-    <nav className="fixed left-[50%] px-4 top-8 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-neutral-700 bg-neutral-900 p-2 text-sm text-neutral-500">
-      <NavLink>Home</NavLink>
-      <NavLink>About</NavLink>
-      <NavLink>Projects</NavLink>
+    <nav className="z-50 fixed left-[50%] px-4 top-8 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-neutral-700 bg-neutral-900 p-2 text-sm text-neutral-500">
+      <NavLink href="#">Home</NavLink>
+      <NavLink href="#about">About</NavLink>
+      <NavLink href="#projects">Projects</NavLink>
       <JoinButton />
     </nav>
   );
 };
 
-const NavLink = ({ children }: { children: string }) => {
+const NavLink = ({ href, children }: { href: string; children: string }) => {
   return (
-    <a href="#" rel="nofollow" className="block overflow-hidden">
+    <a href={href} rel="nofollow" className="block overflow-hidden">
       <motion.div
         whileHover={{ y: -20 }}
         transition={{ ease: "backInOut", duration: 0.5 }}

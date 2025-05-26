@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { FiMenu, FiX } from "react-icons/fi";
 
-const navLinks = ["Home", "About", "Projects"];
+const navLinks = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Projects", href: "#projects" },
+];
 
 export const HeaderMobile = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,11 +33,12 @@ export const HeaderMobile = () => {
           >
             {navLinks.map((link) => (
               <a
-                key={link}
-                href="#"
+                key={link.label}
+                href={link.href}
+                onClick={() => setTimeout(() => setMenuOpen(false), 500)}
                 className="block rounded-md px-3 py-2 text-sm text-neutral-100 hover:bg-white/10 transition"
               >
-                {link}
+                {link.label}
               </a>
             ))}
 
