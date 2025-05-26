@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Luis Montero",
-      url: "https:personal-portfolio-seven-eta-60.vercel.app",
+      url: "https://www.monterodev.live/",
     },
   ],
   creator: "Luis Montero",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Luis Montero Portfolio",
     images: [
       {
-        url: "https://personal-portfolio-seven-eta-60.vercel.app/og-image.png",
+        url: "https://www.monterodev.live/og-image.png",
         width: 1200,
         height: 630,
         alt: "Luis Montero Portfolio Preview",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     description:
       "Discover the work and projects of Luis Montero, a web developer specialized in React and Next.js.",
     creator: "@LuisMon28216655",
-    images: ["https:personal-portfolio-seven-eta-60.vercel.app/og-image.png"],
+    images: ["https://www.monterodev.live/og-image.png"],
   },
 };
 
