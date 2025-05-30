@@ -2,6 +2,7 @@
 
 import { Project } from "./Project";
 import { motion } from "framer-motion";
+import { projects } from "@/data/projects/projects";
 
 export const ProjectsSection = () => {
   return (
@@ -28,36 +29,3 @@ export const ProjectsSection = () => {
     </section>
   );
 };
-
-const projects = [
-  {
-    title: "Katalogue",
-    imgSrc: "/project-imgs/katalogue-preview.png",
-    code: "https://github.com/lmontero18/katalogue",
-    projectLink: "https://katalogue.app",
-    tech: ["Next.js", "TypeScript", "Tailwind", "NestJS", "Prisma"],
-    description:
-      "A modern platform to build & share curated product collections. Co-founded and led engineering.",
-    modalContent: (
-      <>
-        <p>
-          Katalogue is a platform I co-founded to empower creators and
-          entrepreneurs in Costa Rica and LATAM to build beautifully structured,
-          public-facing product collections. It&apos;s designed to be
-          lightweight, fast, and visually engaging—perfect for showcasing
-          favorite tools, curated items, or inspiration boards.
-        </p>
-        <p>
-          I led the technical side: frontend architecture, backend API design,
-          and database modeling. The stack includes Next.js, TailwindCSS,
-          Prisma, and Framer Motion to deliver a polished and performant
-          experience.
-        </p>
-        <p>
-          Katalogue is currently available in Spanish only, as we&apos;re
-          focused on supporting Spanish-speaking creators across Latin America.
-        </p>
-      </>
-    ),
-  },
-];

@@ -8,7 +8,11 @@ export const HeaderDesktop = () => {
 
 const SimpleFloatingNav = () => {
   return (
-    <nav className="z-50 fixed left-[50%] px-4 top-8 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-neutral-700 bg-neutral-900 p-2 text-sm text-neutral-500">
+    <nav
+      className="z-50 fixed left-[50%] px-4 top-8 flex w-fit -translate-x-[50%] items-center gap-6
+      rounded-lg border-[1px] border-white/10 bg-neutral-900/70 p-2 text-sm text-neutral-500
+      backdrop-blur-md backdrop-saturate-150"
+    >
       <NavLink href="#">Home</NavLink>
       <NavLink href="#about">About</NavLink>
       <NavLink href="#projects">Projects</NavLink>
